@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* starts here */
+
+:root {
+    --bg: hsl(225, 100%, 94%);
+    --secondary: hsl(225, 100%, 98%);
+    --accent: hsl(223, 47%, 23%);
+    --primary: hsl(245, 75%, 52%);
+    --light: hsl(224, 23%, 55%);
+}
+
+
+
+body {
+    background: var(--bg);
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+
+
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 350px;
+    gap: 2rem;
+
+}
+
+.content {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+
+
+}
+
+.hero-img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.desc {
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 0 2.8rem;
+    color: var(--light);
+    font-size: 16px;
+
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.pay {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    background: var(--secondary);
+    width: 300px;
+    height: 80px;
+    border-radius: 10px;
+
+
+
+}
+
+
+.plan {
+    display: grid;
+    grid-template-columns: 70px 140px 80px;
+    align-items: center;
+    justify-items: center;
+
+
+}
+
+.change {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.change:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    width: 300px;
+    background: var(--primary);
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 900;
+
+}
+
+
+button:hover {
+    background-color: #746bf1;
+
+}
+
+.cancel {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--light);
+    font-weight: 700;
+}
+
+.cancel:hover {
+    color: black;
+
+}
+
+.price {
+    color: var(--light);
+    margin: .4rem 0;
+}
+
+.annual {
+    font-weight: 700;
+}
